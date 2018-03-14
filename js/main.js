@@ -15,36 +15,8 @@ $(document).ready(function(){
 
 	
 	
-	//Détecteur de "pointbreaks" made by Steph!
-	
-	function guideBreakpoints(){
-		
-		var winWidth = $(window).width();
-		
-        if (winWidth < 575) {
-			
-            console.log('Taille fenetre: ' + winWidth + ' class bootsrap: xs');
-			
-        } else if (winWidth <= 767) {
-			
-            console.log('Taille fenetre: ' + winWidth + ' class bootstrap: sm');
-			
-        } else if (winWidth <= 991) {
-			
-            console.log('Taille fenetre: ' + winWidth + ' class bootstrap: md');
-			
-        } else if (winWidth <= 1199) {
-			
-            console.log('Taille fenetre: ' + winWidth + ' class boostrap: lg');
-			
-        } else {
-			
-            console.log('Taille fenetre: ' + winWidth + ' class bootstrap: xl');
-			
-        }
-		
-	}
-	
+
+	//		FUNCTIONS
 	
 	function auHasard(min,max){
 		
@@ -124,16 +96,6 @@ $(document).ready(function(){
 	}
 	
 	
-	//COMBINAISONS
-	
-
-	
-
-	
-	console.log(hasardTableau(genComb()));
-	
-	
-	
 	
 	
 	
@@ -147,11 +109,6 @@ $(document).ready(function(){
 	});
 	
 	
-	
-	$(window).on('resize', function() {
-		
-		//guideBreakpoints();
 
-    });
 
 });
